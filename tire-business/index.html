@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tire Shop in [City], [State] | [Shop Name]</title>
+    <meta name="description"
+        content="[Shop Name] in [City], [State] offers new and used tires, flat tire repair, mounting, balancing and more. Call or request a tire quote today." />
+    <meta name="theme-color" content="#17191c" />
+
+    <meta property="og:title" content="[Shop Name] | Tire Shop in [City]" />
+    <meta property="og:description" content="Need tires or a flat tire repair? Contact [Shop Name] for a tire quote." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Barlow+Condensed:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Replace placeholder business details before publishing. -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TireShop",
+    "name": "[Shop Name]",
+    "url": "[Website URL]",
+    "telephone": "[Phone Number]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Street Address]",
+      "addressLocality": "[City]",
+      "addressRegion": "[State]",
+      "postalCode": "[ZIP Code]",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="brand">
+                <span class="brand-mark">T</span>
+                <span class="brand-name">[SHOP NAME]<small>TIRE & AUTO SERVICE</small></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Services</a>
+                <a href="#brands">Tire Brands</a>
+                <a href="#specials">Specials</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#location">Location</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="tel:[PHONE]" class="nav-call">☎ Call</a>
+                <a href="#location" class="nav-directions">Directions ↗</a>
+                <a href="#quote" class="button button-red button-small">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <div class="eyebrow"><span></span> YOUR LOCAL TIRE SHOP · [CITY], [STATE]</div>
+
+                    <h1>GOOD TIRES.<br /><span>GOOD TO GO.</span></h1>
+
+                    <p>
+                        Looking for new tires, quality used tires, or help with a flat?
+                        Get the right tire solution for your vehicle at [Shop Name].
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="tel:[PHONE]" class="button button-red">☎ Call Now</a>
+                        <a href="#quote" class="button button-white">Get a Tire Quote ↗</a>
+                    </div>
+
+                    <div class="hero-points">
+                        <span>✓ New & Used Tires</span>
+                        <span>✓ Tire Repair</span>
+                        <span>✓ Local Service</span>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=85"
+                        alt="Automotive repair workshop" fetchpriority="high" />
+                    <div class="hero-image-label">
+                        <span class="label-icon">↗</span>
+                        <div>
+                            <strong>Need tires today?</strong>
+                            <small>Call us to check availability</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom container">
+                <span>BUILT FOR THE ROAD AHEAD</span>
+                <span class="hero-line"></span>
+                <span>[CITY], [STATE]</span>
+            </div>
+        </section>
+
+        <!-- HOURS AND ADDRESS -->
+        <section class="quick-info">
+            <div class="container quick-info-grid">
+                <div class="quick-info-item">
+                    <span class="quick-icon">◷</span>
+                    <div>
+                        <small>SHOP HOURS</small>
+                        <strong id="openStatus">Check today's hours</strong>
+                        <a href="#hours">View all hours ↗</a>
+                    </div>
+                </div>
+
+                <div class="quick-info-item">
+                    <span class="quick-icon">⌖</span>
+                    <div>
+                        <small>VISIT OUR SHOP</small>
+                        <strong>[Street Address]</strong>
+                        <span>[City], [State] [ZIP]</span>
+                    </div>
+                </div>
+
+                <div class="quick-info-item">
+                    <span class="quick-icon">☎</span>
+                    <div>
+                        <small>CALL THE SHOP</small>
+                        <strong><a href="tel:[PHONE]">[Phone Number]</a></strong>
+                        <span>Speak with our team</span>
+                    </div>
+                </div>
+
+                <div class="quick-info-item quick-info-cta">
+                    <a href="https://www.google.com/maps/search/?api=1&query=[BUSINESS_ADDRESS]" target="_blank"
+                        rel="noopener noreferrer">
+                        Get Directions <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST STRIP -->
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <span class="trust-icon">01</span>
+                    <div><strong>[X]+ YEARS</strong><small>In Business</small></div>
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">02</span>
+                    <div><strong>LOCALLY OWNED</strong><small>[If verified]</small></div>
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">03</span>
+                    <div><strong>[WARRANTY]</strong><small>[Approved coverage]</small></div>
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">04</span>
+                    <div><strong>SAME-DAY SERVICE</strong><small>[If offered]</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span></span> WHAT WE DO</div>
+                        <h2>THE RIGHT TIRES.<br /><span>THE RIGHT SERVICE.</span></h2>
+                    </div>
+
+                    <p>
+                        From finding your next set of tires to getting back on the road
+                        after a flat, explore the services available at our shop.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-top"><span>01</span><b>↗</b></div>
+                        <div class="service-icon">◉</div>
+                        <h3>New Tires</h3>
+                        <p>Explore new tire options for cars, SUVs, and light trucks.</p>
+                        <a href="#quote">Request tire options ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>02</span><b>↗</b></div>
+                        <div class="service-icon">◉</div>
+                        <h3>Used Tires</h3>
+                        <p>Ask about available used and part-worn tire options, if offered.</p>
+                        <a href="#quote">Check availability ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>03</span><b>↗</b></div>
+                        <div class="service-icon">✳</div>
+                        <h3>Flat Tire Repair</h3>
+                        <p>Get help with eligible punctures and flat tire repair options.</p>
+                        <a href="#quote">Ask about a repair ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>04</span><b>↗</b></div>
+                        <div class="service-icon">◌</div>
+                        <h3>Mounting & Balancing</h3>
+                        <p>Professional tire mounting and wheel balancing services.</p>
+                        <a href="#quote">Ask about service ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>05</span><b>↗</b></div>
+                        <div class="service-icon">⟳</div>
+                        <h3>Tire Rotation</h3>
+                        <p>Ask about tire rotation to help maintain even tire wear.</p>
+                        <a href="#quote">Schedule a visit ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>06</span><b>↗</b></div>
+                        <div class="service-icon">⊕</div>
+                        <h3>Wheel Alignment</h3>
+                        <p>Ask about alignment services for your vehicle.</p>
+                        <a href="#quote">Ask about alignment ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>07</span><b>↗</b></div>
+                        <div class="service-icon">◈</div>
+                        <h3>TPMS Service</h3>
+                        <p>Get help with tire pressure monitoring system concerns.</p>
+                        <a href="#quote">Ask about TPMS ↗</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top"><span>08</span><b>↗</b></div>
+                        <div class="service-icon">❄</div>
+                        <h3>Seasonal Tires</h3>
+                        <p>Ask about seasonal tire changeovers where available.</p>
+                        <a href="#quote">Ask about availability ↗</a>
+                    </article>
+                </div>
+
+                <p class="section-note">
+                    Services are examples from the starter list. Remove any service the shop does not provide.
+                </p>
+            </div>
+        </section>
+
+        <!-- BRANDS -->
+        <section class="brands-section" id="brands">
+            <div class="container">
+                <div class="brands-heading">
+                    <div class="eyebrow eyebrow-light"><span></span> BRANDS WE CARRY</div>
+                    <h2>FIND A BRAND THAT<br /><span>FITS YOUR DRIVE.</span></h2>
+                    <p>Ask us about available tire brands and sizes for your vehicle.</p>
+                </div>
+
+                <div class="brands-list">
+                    <span>[BRAND ONE]</span>
+                    <span>[BRAND TWO]</span>
+                    <span>[BRAND THREE]</span>
+                    <span>[BRAND FOUR]</span>
+                    <span>[BRAND FIVE]</span>
+                </div>
+
+                <p class="brands-note">Brand availability varies. Contact the shop to confirm current stock.</p>
+            </div>
+        </section>
+
+        <!-- QUOTE FORM -->
+        <section class="section quote-section" id="quote">
+            <div class="container quote-grid">
+                <div class="quote-intro">
+                    <div class="eyebrow"><span></span> GET YOUR TIRE QUOTE</div>
+                    <h2>LET'S FIND YOUR<br /><span>NEXT SET.</span></h2>
+
+                    <p>
+                        Tell us a little about your vehicle and the tires you need.
+                        We'll use these details to follow up about available options.
+                    </p>
+
+                    <div class="quote-callout">
+                        <span>☎</span>
+                        <div>
+                            <small>NEED HELP RIGHT NOW?</small>
+                            <a href="tel:[PHONE]">Call [Phone Number]</a>
+                        </div>
+                    </div>
+
+                    <div class="quote-benefits">
+                        <p>✓ Tell us your vehicle details</p>
+                        <p>✓ Share your tire size</p>
+                        <p>✓ Choose new or used tires</p>
+                    </div>
+                </div>
+
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-heading">
+                        <span>TIRES FOR YOUR VEHICLE</span>
+                        <h3>Request a tire quote</h3>
+                        <p>Complete the details below. Fields marked * are required.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            Full Name *
+                            <input type="text" name="name" placeholder="Your name" required />
+                        </label>
+
+                        <label>
+                            Phone Number *
+                            <input type="tel" name="phone" placeholder="(000) 000-0000" required />
+                        </label>
+                    </div>
+
+                    <label>
+                        Email Address *
+                        <input type="email" name="email" placeholder="you@example.com" required />
+                    </label>
+
+                    <div class="vehicle-fields">
+                        <label>
+                            Vehicle Year *
+                            <input type="text" name="vehicle_year" inputmode="numeric" maxlength="4" placeholder="2022"
+                                required />
+                        </label>
+
+                        <label>
+                            Make *
+                            <input type="text" name="vehicle_make" placeholder="Toyota" required />
+                        </label>
+
+                        <label>
+                            Model *
+                            <input type="text" name="vehicle_model" placeholder="Camry" required />
+                        </label>
+                    </div>
+
+                    <label>
+                        Tire Size *
+                        <input type="text" name="tire_size" placeholder="Example: 225/65R17 or Not sure" required />
+                    </label>
+
+                    <div class="tire-size-tip">
+                        <span>ⓘ</span>
+                        <p>
+                            Not sure about your tire size? Look at the sidewall of your
+                            current tire. You'll find a code similar to <strong>225/65R17</strong>.
+                            You can also enter "Not sure".
+                        </p>
+                    </div>
+
+                    <label>
+                        What type of tires are you looking for? *
+                        <select name="tire_type" required>
+                            <option value="">Choose one</option>
+                            <option value="New tires">New tires</option>
+                            <option value="Used tires">Used tires</option>
+                            <option value="Not sure">Not sure yet</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Additional Message
+                        <textarea name="message" rows="4" placeholder="Tell us about your tire needs..."></textarea>
+                    </label>
+
+                    <input type="text" name="_honeypot" class="honeypot" tabindex="-1" autocomplete="off"
+                        aria-hidden="true" />
+
+                    <button type="submit" class="button button-red button-full">
+                        Send My Tire Quote Request ↗
+                    </button>
+
+                    <p class="form-status" id="formStatus" role="status">
+                        Your details will be used to respond to your tire enquiry.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- SPECIALS -->
+        <section class="section specials-section" id="specials">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span></span> CURRENT OFFERS</div>
+                        <h2>GOOD DEALS.<br /><span>BETTER MILES.</span></h2>
+                    </div>
+
+                    <p>Explore current offers from our shop. Contact us to confirm eligibility and availability.</p>
+                </div>
+
+                <div class="specials-grid">
+                    <article class="special-card">
+                        <span class="special-tag">SPECIAL 01</span>
+                        <h3>[Offer Title]</h3>
+                        <p>[Describe the promotion supplied by the shop.]</p>
+                        <div class="special-terms">Terms: [Offer terms]</div>
+                        <div class="special-date">Valid through: [End Date]</div>
+                        <a href="#quote">Ask about this offer ↗</a>
+                    </article>
+
+                    <article class="special-card special-card-featured">
+                        <span class="special-tag">SPECIAL 02</span>
+                        <h3>[Offer Title]</h3>
+                        <p>[Describe the second promotion supplied by the shop.]</p>
+                        <div class="special-terms">Terms: [Offer terms]</div>
+                        <div class="special-date">Valid through: [End Date]</div>
+                        <a href="#quote">Ask about this offer ↗</a>
+                    </article>
+
+                    <article class="special-card">
+                        <span class="special-tag">SPECIAL 03</span>
+                        <h3>[Offer Title]</h3>
+                        <p>[Describe the third promotion supplied by the shop.]</p>
+                        <div class="special-terms">Terms: [Offer terms]</div>
+                        <div class="special-date">Valid through: [End Date]</div>
+                        <a href="#quote">Ask about this offer ↗</a>
+                    </article>
+                </div>
+
+                <p class="section-note">Replace these examples with approved offers. Remove unused offers and expired
+                    promotions.</p>
+            </div>
+        </section>
+
+        <!-- FINANCING AND PAYMENTS -->
+        <section class="payment-section">
+            <div class="container payment-grid">
+                <div>
+                    <div class="eyebrow eyebrow-light"><span></span> PAYMENT OPTIONS</div>
+                    <h2>MORE WAYS TO<br /><span>GET ROLLING.</span></h2>
+                    <p>
+                        Ask our team about accepted payment methods and available financing options.
+                    </p>
+                </div>
+
+                <div class="payment-content">
+                    <div class="payment-methods">
+                        <span>[Payment Method 1]</span>
+                        <span>[Payment Method 2]</span>
+                        <span>[Payment Method 3]</span>
+                    </div>
+
+                    <a href="[FINANCING PROVIDER URL]" class="button button-white" target="_blank"
+                        rel="noopener noreferrer">
+                        Explore Financing ↗
+                    </a>
+
+                    <small>Financing is subject to provider availability and approval. Remove this section if not
+                        offered.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="section reviews-section" id="reviews">
+            <div class="container">
+                <div class="reviews-heading">
+                    <div>
+                        <div class="eyebrow"><span></span> CUSTOMER REVIEWS</div>
+                        <h2>DRIVERS HAVE<br /><span>THEIR SAY.</span></h2>
+                    </div>
+
+                    <a href="[GOOGLE REVIEW URL]" class="button button-outline" target="_blank"
+                        rel="noopener noreferrer">
+                        Leave Us a Review ↗
+                    </a>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"[Insert a genuine Google review from a customer.]"</p>
+                        <div class="review-author">
+                            <span>A</span>
+                            <div><strong>[Customer Name]</strong><small>Google Review</small></div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"[Insert another genuine Google review from a customer.]"</p>
+                        <div class="review-author">
+                            <span>B</span>
+                            <div><strong>[Customer Name]</strong><small>Google Review</small></div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"[Insert a third genuine Google review from a customer.]"</p>
+                        <div class="review-author">
+                            <span>C</span>
+                            <div><strong>[Customer Name]</strong><small>Google Review</small></div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="section-note">Only publish genuine customer reviews and accurate star ratings.</p>
+            </div>
+        </section>
+
+        <!-- PHOTO GALLERY -->
+        <section class="section gallery-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span></span> INSIDE THE SHOP</div>
+                        <h2>REAL PEOPLE.<br /><span>REAL TIRE SERVICE.</span></h2>
+                    </div>
+
+                    <p>Take a look inside our shop and see where we help drivers get back on the road.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item gallery-large">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=85"
+                            alt="Automotive repair workshop" loading="lazy" />
+                        <figcaption>OUR SHOP</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c5c7a7?auto=format&fit=crop&w=900&q=85"
+                            alt="Vehicle wheel and tire" loading="lazy" />
+                        <figcaption>SERVICE BAYS</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1613214150384-4a6c9b3a7a7e?auto=format&fit=crop&w=900&q=85"
+                            alt="Car maintenance and repair" loading="lazy" />
+                        <figcaption>OUR TEAM</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=85"
+                            alt="Car at an automotive service location" loading="lazy" />
+                        <figcaption>TIRE SELECTION</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85"
+                            alt="Vehicle ready for the road" loading="lazy" />
+                        <figcaption>OUR EQUIPMENT</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section" id="faq">
+            <div class="container faq-grid">
+                <div class="faq-intro">
+                    <div class="eyebrow"><span></span> GOOD TO KNOW</div>
+                    <h2>BEFORE YOU<br /><span>HIT THE ROAD.</span></h2>
+                    <p>Have a question about tires or our services? Here are a few helpful answers.</p>
+                    <a href="tel:[PHONE]" class="button button-red">☎ Call the Shop</a>
+                </div>
+
+                <div class="faq-list">
+                    <article class="faq-item active">
+                        <button class="faq-question" aria-expanded="true">
+                            How do I find my tire size?
+                            <span>−</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Check the sidewall of your current tire. You'll see a code such
+                                as 225/65R17. You can also check your vehicle owner's manual
+                                or the tire information label on your vehicle.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can you repair a flat tire, and how long does it take?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Some punctures can be repaired depending on their location
+                                and the tire's condition. Contact us so the shop can assess
+                                your situation and advise on timing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer same-day service?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Same-day service depends on the service required, tire
+                                availability, and shop workload. Call us to check current availability.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need an appointment, or can I walk in?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Contact the shop to confirm walk-in availability or ask
+                                about arranging a visit. If the shop has an existing booking
+                                tool, use the booking link provided by the business.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer a warranty on new tires?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Warranty coverage depends on the tire brand and the terms
+                                supplied by the shop or manufacturer. Ask us for the
+                                applicable details before purchasing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I know when my tires need replacing?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Visible damage, unusual wear, cracks, bulges, or low tread
+                                can indicate a tire needs professional attention. Have
+                                your tires inspected if you are unsure.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="location-section" id="location">
+            <div class="container location-heading">
+                <div>
+                    <div class="eyebrow"><span></span> FIND OUR SHOP</div>
+                    <h2>COME SEE US<br /><span>IN [CITY].</span></h2>
+                </div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=[BUSINESS_ADDRESS]" target="_blank"
+                    rel="noopener noreferrer" class="button button-red">
+                    Get Directions ↗
+                </a>
+            </div>
+
+            <div class="map-frame">
+                <iframe title="Map showing [Shop Name] location"
+                    src="https://www.google.com/maps?q=[BUSINESS_ADDRESS]&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="container location-details">
+                <div>
+                    <small>SHOP ADDRESS</small>
+                    <strong>[Street Address], [City], [State] [ZIP]</strong>
+                    <p>[Add parking, entrance, or landmark directions.]</p>
+                </div>
+
+                <div>
+                    <small>PHONE</small>
+                    <strong><a href="tel:[PHONE]">[Phone Number]</a></strong>
+                    <p>Call for tire availability and service questions.</p>
+                </div>
+
+                <div id="hours">
+                    <small>BUSINESS HOURS</small>
+                    <div id="hoursList" class="hours-list"></div>
+                    <p id="holidayHours">Holiday hours: [Add approved holiday schedule]</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a href="#home" class="brand brand-footer">
+                    <span class="brand-mark">T</span>
+                    <span class="brand-name">[SHOP NAME]<small>TIRE & AUTO SERVICE</small></span>
+                </a>
+
+                <p>
+                    Your local destination for tires and tire services in
+                    [City], [State]. Contact our team for availability and quotes.
+                </p>
+
+                <a href="tel:[PHONE]" class="footer-phone">☎ [Phone Number]</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>QUICK LINKS</h4>
+                <a href="#services">Our Services</a>
+                <a href="#brands">Tire Brands</a>
+                <a href="#specials">Special Offers</a>
+                <a href="#reviews">Customer Reviews</a>
+                <a href="#faq">FAQs</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>VISIT US</h4>
+                <p>[Street Address]</p>
+                <p>[City], [State] [ZIP]</p>
+                <a href="#location">View Location ↗</a>
+                <a href="tel:[PHONE]">Call the Shop</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>FOLLOW US</h4>
+                <a href="[FACEBOOK URL]" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                <a href="[INSTAGRAM URL]" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                <a href="[GOOGLE BUSINESS URL]" target="_blank" rel="noopener noreferrer">Google Business ↗</a>
+                <a href="[BOOKING URL]" target="_blank" rel="noopener noreferrer">Book a Visit ↗</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="year"></span> [Shop Name]. All rights reserved.</p>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#home">Back to Top ↑</a>
+        </div>
+    </footer>
+
+    <!-- MOBILE CALL BUTTON -->
+    <a href="tel:[PHONE]" class="mobile-call-bar">☎ &nbsp; CALL THE TIRE SHOP</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

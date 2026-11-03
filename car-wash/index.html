@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Greg's Custom Detailing | Car Detailing in Center, TX</title>
+  <meta name="description" content="Greg's Custom Detailing in Center, Texas. Interior and exterior car detailing that makes your vehicle look new. Call 936-244-0535.">
+
+  <meta property="og:title" content="Greg's Custom Detailing | Center, TX">
+  <meta property="og:description" content="Car detailing in Center, Texas. Call 936-244-0535.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/share.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- LocalBusiness schema. Add openingHours once the owner gives real hours -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDetailing",
+    "name": "Greg's Custom Detailing",
+    "telephone": "+1-936-244-0535",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "645 Pine Terrace",
+      "addressLocality": "Center",
+      "addressRegion": "TX",
+      "postalCode": "75935",
+      "addressCountry": "US"
+    },
+    "url": "https://www.gregsmobiledetail.com"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Shown only when SITE.closed is true in script.js -->
+  <div id="closed-banner" class="closed-banner" hidden></div>
+
+  <!-- 1. STICKY TOP BAR -->
+  <header class="topbar">
+    <a class="brand" href="#top">Greg's Custom Detailing</a>
+    <nav class="topbar-actions" aria-label="Quick actions">
+      <a class="btn btn-small btn-solid" data-call href="#">Call</a>
+      <a class="btn btn-small" data-directions target="_blank" rel="noopener" href="#">Directions</a>
+      <a class="btn btn-small" href="#packages">Packages</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. HERO with before/after slider -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Detailing that makes it look new again</h1>
+        <p class="promise">Interior and exterior car detailing in Center, Texas.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-big btn-solid" data-call href="#">Call Greg</a>
+          <a class="btn btn-big" href="#packages">See packages</a>
+        </div>
+      </div>
+
+      <!-- Drag the handle: it reveals the "after" photo on top of the "before" photo -->
+      <div class="compare" id="compare" aria-label="Before and after detailing comparison">
+        <div class="compare-after"></div>
+        <div class="compare-before" id="compare-before"></div>
+        <span class="tag tag-before">Before</span>
+        <span class="tag tag-after">After</span>
+        <div class="compare-line" id="compare-line"></div>
+        <input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+      </div>
+    </section>
+
+    <!-- 3. HOURS + LOCATION -->
+    <section class="strip" aria-label="Hours and location">
+      <div>
+        <h2>Hours</h2>
+        <ul id="hours-list" class="hours"></ul>
+      </div>
+      <div>
+        <h2>Find us</h2>
+        <p id="strip-address"></p>
+        <p><a id="strip-phone" data-call href="#"></a></p>
+      </div>
+    </section>
+
+    <!-- 4. PACKAGES -->
+    <section id="packages" class="section">
+      <h2>Detailing packages</h2>
+      <p class="lead">Pick a package, or call and tell us what your car needs.</p>
+      <div id="package-cards" class="cards"></div>
+    </section>
+
+    <!-- 5. MAINTENANCE CLUB (adapted from Unlimited Wash Club) -->
+    <section id="plan" class="section plan">
+      <h2 id="plan-title"></h2>
+      <p class="lead" id="plan-intro"></p>
+      <ul id="plan-benefits" class="benefits"></ul>
+      <h3>How it works</h3>
+      <ol id="plan-steps" class="steps"></ol>
+      <a id="plan-join" class="btn btn-big btn-solid" target="_blank" rel="noopener" href="#">Join now</a>
+    </section>
+
+    <!-- 6. PHOTO STRIP -->
+    <section class="section" aria-label="Photos">
+      <h2>Our work</h2>
+      <div id="photo-strip" class="photos"></div>
+    </section>
+
+    <!-- 7. REVIEWS -->
+    <section class="section">
+      <h2>Customer reviews</h2>
+      <div id="review-list" class="reviews"></div>
+      <a class="btn" id="review-link" target="_blank" rel="noopener" href="#">Leave us a review</a>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="section">
+      <h2>Common questions</h2>
+      <div id="faq-list" class="faq"></div>
+    </section>
+
+    <!-- 9. LOCATION + MAP -->
+    <section class="section" id="location">
+      <h2>Where to find us</h2>
+      <p id="map-address"></p>
+      <p><a class="btn btn-solid" data-call href="#">Tap to call</a></p>
+      <div class="map-wrap">
+        <iframe id="map-frame" title="Map showing Greg's Custom Detailing" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT FORM -->
+    <section id="contact" class="section">
+      <h2>Ask for a quote</h2>
+      <form id="contact-form" novalidate>
+        <label>Name
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>Email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required placeholder="Your vehicle and what you would like done"></textarea>
+        </label>
+        <!-- Honeypot: hidden from humans, bots fill it in -->
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-big btn-solid" type="submit">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="footer">
+    <p><strong>Greg's Custom Detailing</strong></p>
+    <p id="footer-address"></p>
+    <p><a data-call href="#" id="footer-phone"></a></p>
+    <p class="social" id="social-links"></p>
+    <p><a href="#privacy">Privacy Policy</a></p>
+    <p id="privacy" class="privacy">We only use the details you send us to reply to your message. We do not sell or share your information.</p>
+    <p class="copy">&copy; <span id="year"></span> Greg's Custom Detailing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
